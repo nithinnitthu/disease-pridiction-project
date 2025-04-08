@@ -1,0 +1,13 @@
+I started by gathering our data from a CSV file named "Disease_train.csv", containing vital information about patients and their medical attributes. To ensure our model's accuracy, I meticulously preprocessed the data:
+
+Filled missing values with the mean value of each feature.
+Standardized the feature values using StandardScaler for uniformity.
+Split the dataset into a 75:25 ratio for training and testing purposes.
+After thorough consideration, I opted for the Support Vector Classifier (SVC) as our primary model. SVC is renowned for its ability to handle high-dimensional data and find intricate decision boundaries, making it an ideal choice for our predictive task. Additionally, I employed the SMOTE algorithm to address class imbalance, ensuring our model's reliability.
+
+Model Training and Evaluation:
+With my model selected, we proceeded to train it on the resampled training data. Our evaluation process involved a comprehensive analysis using various metrics:
+I assessed the model's accuracy score on the test set.
+The classification report provided valuable insights into precision, recall, and F1-score for each class, gauging our model's performance metrics.
+The confusion matrix offered a detailed overview of true positive, false positive, true negative, and false negative predictions.
+The ROC AUC score quantified the model's performance on the ROC curve, providing a holistic view of its discriminatory ability.
